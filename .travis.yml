@@ -1,0 +1,15 @@
+language: c
+
+addons:
+  apt:
+    packages:
+      # jset, jmap
+      - libjudy-dev
+      # wwviaudio
+      - libvorbis-dev libportaudio-dev
+      # tal
+      - libtalloc-dev
+
+script:
+  - make
+  - make check
